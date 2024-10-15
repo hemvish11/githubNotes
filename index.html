@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>github Notes</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Git hub Important Commands</h1>
+    <table>
+        <tr>
+            <th>Commands</th>
+            <th>Explanation</th>
+        </tr>
+
+        <tr>
+            <td>git init</td>
+            <td>initializes the empty repo</td>
+        </tr>
+        <tr>
+            <td>git add text.txt</td>
+            <td>adds the text.txt file in current repo for commiting later</td>
+        </tr>
+        <tr>
+            <td>git status</td>
+            <td>shows changes to be commited and untraced files</td>
+        </tr>
+        <tr>
+            <td>git status -uno</td>
+            <td>displays the status of your working directory and staging area while ignoring the untracked files</td>
+        </tr>
+        <tr>
+            <td>git log</td>
+            <td>displays the commit history of the current branch</td>
+        </tr>
+
+        <tr>
+            <td>git commit -m "first-commit"</td>
+            <td>Adds the commit for the added files</td>
+        </tr>
+
+        <tr>
+            <td>git branch</td>
+            <td>shows active branch</td>
+        </tr>
+
+        <tr>
+            <td>git branch -a</td>
+            <td>shows all branches</td>
+        </tr>
+
+        <tr>
+            <td>git branch hemant</td>
+            <td>create new branch named hemant</td>
+        </tr>
+
+        <tr>
+            <td>git checkout hemant</td>
+            <td>switch to branch hemant</td>
+        </tr>
+
+        <tr>
+            <td>git checkout -b dummy</td>
+            <td>create new branch named dummy then switch to new branch named dummy</td>
+        </tr>
+        <tr>
+            <td>---------------------</td>
+            <td>---------------------</td>
+        </tr>
+        <tr>
+            <td> step#1. git checkout hemant</td>
+            <td>go to the branch you want to merge</td>
+        </tr>
+
+        <tr>
+            <td>step#2. git pull https://github.com/git/git hemant</td>
+            <td>pulls the branch into hemant branch</td>
+        </tr>
+        <tr>
+            <td>step#3. git rebase master</td>
+            <td>adds the hemant(curr) branch to the master branch</td>
+        </tr>
+        <tr>
+            <td>---------------------</td>
+            <td>---------------------</td>
+        </tr>
+        <tr>
+            <td>git push origin main</td>
+            <td>Push the branch (and its commits) to remote server</td>
+        </tr>
+        <tr>
+            <td>git push origin main -f</td>
+            <td>If you had pushed branch before,then this pushes the branch (and its commits) to remote server
+                forcefully with newer commit</td>
+        </tr>
+        <tr>
+            <td>git pull origin main</td>
+            <td>Pull the branch (and its commits) from remote server (here,must be on main branch)</td>
+        </tr>
+        <tr>
+            <td>git merge main</td>
+            <td>This command merges the specified(main) branch into the current branch.</td>
+        </tr>
+        <tr>
+            <td>git reset --hard</td>
+            <td>undo all your changes in the branch(locally)</td>
+        </tr>
+        <tr>
+            <td>git reset --hard origin/main</td>
+            <td>undo all your changes in the branch (remotely)</td>
+        </tr>
+        <tr>
+            <td>git checkout -- text2.txt</td>
+            <td>undo changes in text2.txt file</td>
+        </tr>
+        <tr>
+            <td>git rev-list --count HEAD ^master</td>
+            <td>This command will count the number of commits that are unique to the current branch compared to the
+                master branch.</td>
+        </tr>
+        <tr>
+            <td>git reset --soft head~5</td>
+            <td>prepares your last 5 commits to be squash into one. To be followed by git commit.</td>
+        </tr>
+        <tr>
+            <td>git commit --amend</td>
+            <td>Change last commit msg</td>
+        </tr>
+        <tr>
+            <td>git stash save</td>
+            <td>Saves uncommitted changes into a stack</td>
+        </tr>
+        <tr>
+            <td>git stash save "This is my message</td>
+            <td>Saves uncommitted changes into a stack( with a message)</td>
+        </tr>
+        <tr>
+            <td>git stash list</td>
+            <td>Lists stash stack</td>
+        </tr>
+        <tr>
+            <td>git stash pop</td>
+            <td>Brings back changes (uncommitted) saved at top of stash stack.</td>
+        </tr>
+    </table>
+</body>
+
+</html>
